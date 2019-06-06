@@ -41,18 +41,30 @@ class TaskModel
      */
     function getAllTasks($sort, $sort_ASC = 'ASC', $active, $count)
     {
-        //$sql = 'SELECT * FROM tasks';
-        //if($active<0) $active=0;
         $sql = "SELECT * FROM tasks ORDER BY {$sort} {$sort_ASC} LIMIT {$active},{$count}";
-        //d($sql);
+
         $rs = mysql_query($sql);
 
         $smartyRS = array();
+
         while ($row = mysql_fetch_assoc($rs)) {
+
             $smartyRS[] = $row;
         }
 
         return $smartyRS;
+    }
+
+    /**
+     * @return resource
+     */
+    function getCountsTasks()
+    {
+        $sql = 'SELECT COUNT(*) as count FROM tasks';
+        $rsCount = mysql_query($sql);
+        $rsCount = mysql_fetch_assoc($rsCount)['count'];
+
+        return $rsCount;
     }
 
 }

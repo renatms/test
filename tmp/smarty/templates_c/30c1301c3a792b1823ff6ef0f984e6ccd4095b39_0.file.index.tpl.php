@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2019-06-05 17:44:21
+/* Smarty version 3.1.34-dev-7, created on 2019-06-06 23:55:53
   from 'D:\Programs\Openserver\OSPanel\domains\testmade\views\default\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5cf7d54559bd68_61893305',
+  'unifunc' => 'content_5cf97dd9999943_38432094',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '30c1301c3a792b1823ff6ef0f984e6ccd4095b39' => 
     array (
       0 => 'D:\\Programs\\Openserver\\OSPanel\\domains\\testmade\\views\\default\\index.tpl',
-      1 => 1559745853,
+      1 => 1559854548,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf7d54559bd68_61893305 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf97dd9999943_38432094 (Smarty_Internal_Template $_smarty_tpl) {
 ?><form action="/IndexController.php" method="post">
     <table class="table table-hover">
         <thead>
@@ -69,7 +69,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
                 <?php }?>
                 <td>
                     <?php if ($_smarty_tpl->tpl_vars['admin']->value == 1) {?>
-                        <button type="submit" class="btn" name="id" value="<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
+                        <button type="submit" class="btn" name="id" value="<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];
+echo $_smarty_tpl->tpl_vars['indexTask']->value++;?>
 ">
                             Изменить
                         </button>

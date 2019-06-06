@@ -37,7 +37,7 @@
                 {/if}
                 <td>
                     {if $admin==1}
-                        <button type="submit" class="btn" name="id" value="{$item['id']}">
+                        <button type="submit" class="btn" name="id" value="{$item['id']}{$indexTask++}">
                             Изменить
                         </button>
                     {/if}
